@@ -91,7 +91,7 @@
     }
     else
     {
-        return CGSizeMake(self.view.frame.size.width/2 - 18, self.view.frame.size.width/2 + 10);
+        return CGSizeMake(self.view.frame.size.width/2 - 16, self.view.frame.size.width/2 + 10);
     }
 }
 

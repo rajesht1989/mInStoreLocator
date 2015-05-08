@@ -28,12 +28,9 @@
     }
 }
 
-- (void)viewDidLoad {
+- (void)viewDidLoad
+{
     [super viewDidLoad];
-//    self.navigationItem.leftBarButtonItem = self.editButtonItem;
-//    UIBarButtonItem *addButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(insertNewObject:)];
-//    self.navigationItem.rightBarButtonItem = addButton;
-//    [addButton setTintColor:[UIColor whiteColor]];
     [self.navigationItem.leftBarButtonItem setTintColor:[UIColor whiteColor]];
     [[self.navigationController navigationBar] setBackgroundImage:NAVIGATION_BAR_IMAGE forBarMetrics:UIBarMetricsDefault];
     self.navigationController.navigationBar.titleTextAttributes = [NSDictionary dictionaryWithObject:[UIColor whiteColor] forKey:NSForegroundColorAttributeName];
@@ -69,6 +66,45 @@
     for (MSCategory *category in basemodel.category)
     {
         [self.objects addObject:category.name];
+    }
+}
+
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    if ([MStore isLoggedin])
+    {
+        [self.navigationItem setRightBarButtonItem:[[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"logout"] style:UIBarButtonItemStylePlain target:self action:@selector(rightBarButtonTapped)]];
+    }
+    else
+    {
+        [self.navigationItem setRightBarButtonItem:[[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"login"] style:UIBarButtonItemStylePlain target:self action:@selector(rightBarButtonTapped)]];
+    }
+    [self.navigationItem.rightBarButtonItem setTintColor:[UIColor whiteColor]];
+}
+
+- (void)rightBarButtonTapped
+{
+    if ([MStore isLoggedin])
+    {
+        [[[UIAlertView alloc] initWithTitle:nil message:@"Are you sure you want to logout?" delegate:self cancelButtonTitle:@"No" otherButtonTitles:@"Yes", nil] show];
+    }
+    else
+    {
+        MSLoginViewController *loginController = [[MSLoginViewController alloc] init];
+        UINavigationController *navCon = [[UINavigationController alloc] initWithRootViewController:loginController];
+        [self presentViewController:navCon animated:YES completion:nil];
+    }
+}
+
+- (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex
+{
+    if (alertView.cancelButtonIndex != buttonIndex)
+    {
+        [MStore showActivity];
+        [MStore logout];
+        [self.navigationItem setRightBarButtonItem:[[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"login"] style:UIBarButtonItemStylePlain target:self action:@selector(rightBarButtonTapped)]];
+        [self.navigationItem.rightBarButtonItem setTintColor:[UIColor whiteColor]];
     }
 }
 

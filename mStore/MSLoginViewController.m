@@ -45,7 +45,7 @@
     [bgView.layer setCornerRadius:8];
     [self.view addSubview:bgView];
     
-    UIImageView *imageView = [[UIImageView alloc] initWithFrame:CGRectMake((bgView.frame.size.width - 55)/2, 10, 55, 68)];
+    UIImageView *imageView = [[UIImageView alloc] initWithFrame:CGRectMake((bgView.frame.size.width - 65)/2, 10, 65, 80)];
     [imageView setImage:[UIImage imageNamed:@"Logo"]];
     [imageView.layer setCornerRadius:4];
     [imageView setClipsToBounds:YES];
@@ -54,6 +54,7 @@
     
     UILabel *lblUserName = [[UILabel alloc] initWithFrame:CGRectMake(30, (imageFrame.origin.y + imageFrame.size.height + 20), 100, 30)];
     [lblUserName setText:@"Username"];
+    [lblUserName setFont:[UIFont systemFontOfSize:16 weight:.4]];
     [lblUserName setTextColor:[UIColor whiteColor]];
     [bgView addSubview:lblUserName];
     
@@ -65,6 +66,7 @@
     
     UILabel *lblPassword = [[UILabel alloc] initWithFrame:CGRectMake(30, (txtUname.frame.origin.y + txtUname.frame.size.height + 30), 100, 30)];
     [lblPassword setText:@"Password"];
+    [lblPassword setFont:[UIFont systemFontOfSize:16 weight:.4]];
     [lblPassword setTextColor:[UIColor whiteColor]];
     [bgView addSubview:lblPassword];
     
@@ -94,8 +96,13 @@
         [[[UIAlertView alloc] initWithTitle:nil message:@"Please enter Password" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles: nil] show];
         return;
     }
-    [MStore login];
-    [self dismissViewControllerAnimated:YES completion:nil];
+    
+    [MStore showActivity];
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        [MStore login];
+        [self dismissViewControllerAnimated:YES completion:nil];
+        [MStore hideActivity];
+    });
 }
 
 - (void)textFieldDidBeginEditing:(UITextField *)textField
