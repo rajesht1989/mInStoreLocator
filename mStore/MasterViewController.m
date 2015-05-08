@@ -7,7 +7,6 @@
 
 #import "MasterViewController.h"
 #import "DetailViewController.h"
-#import "UIImage+Color.h"
 #import "MStore.h"
 #import "MSLoginViewController.h"
 
@@ -81,6 +80,19 @@
 {
     [searchBar resignFirstResponder];
 }
+
+- (void)searchBarSearchButtonClicked:(UISearchBar *)searchBar
+{
+    [MStore showActivity];
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        MSCategory *category = [basemodel searchCategoryForSearchString:searchBar.text];
+        [MStore hideActivity];
+        DetailViewController *controller = [DetailViewController new];
+        [controller setCategory:category];
+        [self.navigationController pushViewController:controller animated:YES];
+    });
+}
+
 
 - (void)insertNewObject:(id)sender {
     if (!self.objects) {

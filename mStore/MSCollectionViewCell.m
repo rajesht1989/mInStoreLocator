@@ -9,7 +9,7 @@
 
 @implementation MSCollectionViewCell
 
-- (void)initialize
+- (void)initializeWithOwner:(id)owner
 {
 //    [[self subviews] makeObjectsPerformSelector:@selector(removeFromSuperview)];
     if (!_imgItem)
@@ -39,9 +39,9 @@
         [_btnLocate setBackgroundColor:[UIColor colorWithRed:.9 green:.9 blue:.9 alpha:1]];
         [_btnLocate  setTitleColor:[UIColor darkGrayColor] forState:UIControlStateNormal];
         [_btnLocate.layer setCornerRadius:4];
+        [_btnLocate addTarget:owner action:@selector(locateTapped:) forControlEvents:UIControlEventTouchUpInside];
         [self addSubview:_btnLocate];
     }
-    
 }
 
 @end

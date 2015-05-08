@@ -14,6 +14,6 @@
 @property(nonatomic,strong)UILabel *lblPrice;
 @property(nonatomic,strong)UIButton *btnLocate;
 
-- (void)initialize;
+- (void)initializeWithOwner:(id)owner;
 
 @end

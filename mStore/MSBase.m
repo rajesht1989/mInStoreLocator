@@ -78,6 +78,25 @@ NSString *const kMSBaseClassCategory = @"category";
     return [NSString stringWithFormat:@"%@", [self dictionaryRepresentation]];
 }
 
+- (MSCategory *)searchCategoryForSearchString:(NSString *)strSearch
+{
+    MSCategory *searchCategory = [MSCategory new];
+    NSMutableArray *arrItems = [NSMutableArray new];
+    [searchCategory setName:[NSString stringWithFormat:@"Results for \"%@\"",strSearch]];
+    for (MSCategory *aCategory in self.category)
+    {
+        for (MSItems *aItem in aCategory.items)
+        {
+            if ([[aItem.name lowercaseString] containsString:[strSearch lowercaseString]])
+            {
+                [arrItems addObject:aItem];
+            }
+        }
+    }
+    [searchCategory setItems:arrItems];
+    return searchCategory;
+}
+
 #pragma mark - Helper Method
 - (id)objectOrNilForKey:(id)aKey fromDictionary:(NSDictionary *)dict
 {

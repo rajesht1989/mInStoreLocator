@@ -8,6 +8,9 @@
 #import "MSLocationViewController.h"
 
 @interface MSLocationViewController ()
+{
+    UIImageView *imageViewPin;
+}
 
 @end
 
@@ -15,22 +18,21 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    
+    [self setTitle:@"Location"];
+    UIImageView *imageView = [[UIImageView alloc] initWithFrame:self.view.bounds];
+    [imageView setImage:[UIImage imageWithColor:[UIColor whiteColor]]];
+    [self.view addSubview:imageView];
+    
+    imageViewPin = [[UIImageView alloc] initWithFrame:CGRectMake(50, 50, 50, 40)];
+    [imageViewPin setImage:[UIImage imageNamed:@"pin"]];
+    [self.view addSubview:imageViewPin];
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
-/*
-#pragma mark - Navigation
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end

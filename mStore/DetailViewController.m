@@ -6,10 +6,10 @@
 //
 
 #import "DetailViewController.h"
-#import "UIImage+Color.h"
 #import "MStore.h"
 #import "MSLoginViewController.h"
 #import "MSCollectionViewCell.h"
+#import "MSLocationViewController.h"
 
 @interface DetailViewController ()<UICollectionViewDataSource,UICollectionViewDelegate>
 {
@@ -21,22 +21,6 @@
 @implementation DetailViewController
 
 #pragma mark - Managing the detail item
-
-//- (void)setDetailItem:(id)newDetailItem {
-//    if (_detailItem != newDetailItem) {
-//        _detailItem = newDetailItem;
-//            
-//        // Update the view.
-//        [self configureView];
-//    }
-//}
-//
-//- (void)configureView {
-//    // Update the user interface for the detail item.
-//    if (self.detailItem) {
-//        self.detailDescriptionLabel.text = [self.detailItem description];
-//    }
-//}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -89,7 +73,7 @@
 {
     static NSString *strCell = @"collectionViewCell";
     MSCollectionViewCell *cell = [collectionViewLocal dequeueReusableCellWithReuseIdentifier:strCell forIndexPath:indexPath];
-    [cell initialize];
+    [cell initializeWithOwner:self];
     [cell setBackgroundColor:[UIColor whiteColor]];
     MSItems *item = [[_category items] objectAtIndex:indexPath.row];
     [cell.imgItem setImage:[UIImage imageNamed:item.itemsIdentifier]];
@@ -118,7 +102,13 @@
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
+
+- (void)locateTapped:(UIButton *)button
+{
+    MSLocationViewController *locateController = [MSLocationViewController new];
+    [self.navigationController pushViewController:locateController animated:YES];
+}
+
 
 @end

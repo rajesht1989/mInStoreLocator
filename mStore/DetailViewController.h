@@ -13,5 +13,7 @@
 @property (strong, nonatomic) MSCategory *category;
 @property (weak, nonatomic) IBOutlet UILabel *detailDescriptionLabel;
 
+- (void)locateTapped:(UIButton *)button;
+
 @end
 

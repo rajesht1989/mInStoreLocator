@@ -7,7 +7,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface MSLoginViewController : UIViewController
+@interface MSLoginViewController : MSParentViewController
+
 - (void)cancelTapped:(id)sender;
 
 @end

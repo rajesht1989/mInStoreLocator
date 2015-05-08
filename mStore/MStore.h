@@ -13,10 +13,13 @@
 
 @interface MStore : NSObject
 
-+ (instancetype)sharedStore;
+@property(nonatomic,strong)UIView *loadingView;
 
++ (instancetype)sharedStore;
 + (void)login;
 + (BOOL)isLoggedin;
 + (void)logout;
++ (void)showActivity;
++ (void)hideActivity;
 
 @end

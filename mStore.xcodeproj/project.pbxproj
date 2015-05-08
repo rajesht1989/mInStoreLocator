@@ -13,6 +13,7 @@
 		922F29C61AFC6DC00001F580 /* List.png in Resources */ = {isa = PBXBuildFile; fileRef = 922F29C21AFC6DC00001F580 /* List.png */; };
 		922F29C71AFC6DC00001F580 /* List@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 922F29C31AFC6DC00001F580 /* List@2x.png */; };
 		922F29CA1AFC80CC0001F580 /* MSLocationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 922F29C91AFC80CC0001F580 /* MSLocationViewController.m */; };
+		922F29CC1AFC92780001F580 /* pin.png in Resources */ = {isa = PBXBuildFile; fileRef = 922F29CB1AFC92780001F580 /* pin.png */; };
 		9267CEE81AF8886C00106310 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9267CEE71AF8886C00106310 /* main.m */; };
 		9267CEEB1AF8886C00106310 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9267CEEA1AF8886C00106310 /* AppDelegate.m */; };
 		9267CEEE1AF8886C00106310 /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9267CEED1AF8886C00106310 /* MasterViewController.m */; };
@@ -62,6 +63,7 @@
 		922F29C31AFC6DC00001F580 /* List@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "List@2x.png"; sourceTree = "<group>"; };
 		922F29C81AFC80CC0001F580 /* MSLocationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSLocationViewController.h; sourceTree = "<group>"; };
 		922F29C91AFC80CC0001F580 /* MSLocationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSLocationViewController.m; sourceTree = "<group>"; };
+		922F29CB1AFC92780001F580 /* pin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pin.png; sourceTree = "<group>"; };
 		9267CEE21AF8886C00106310 /* mStore.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = mStore.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9267CEE61AF8886C00106310 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9267CEE71AF8886C00106310 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -221,6 +223,7 @@
 		9267CF461AFB6C8C00106310 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				922F29CB1AFC92780001F580 /* pin.png */,
 				922F29C01AFC6DC00001F580 /* gridicon.png */,
 				922F29C11AFC6DC00001F580 /* gridicon@2x.png */,
 				922F29C21AFC6DC00001F580 /* List.png */,
@@ -308,6 +311,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				922F29CC1AFC92780001F580 /* pin.png in Resources */,
 				9267CF5A1AFB6CFE00106310 /* 10.png in Resources */,
 				9267CF581AFB6CFE00106310 /* 8.png in Resources */,
 				9267CF561AFB6CFE00106310 /* 6.png in Resources */,

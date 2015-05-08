@@ -16,5 +16,6 @@
 + (instancetype)modelObjectWithDictionary:(NSDictionary *)dict;
 - (instancetype)initWithDictionary:(NSDictionary *)dict;
 - (NSDictionary *)dictionaryRepresentation;
+- (MSCategory *)searchCategoryForSearchString:(NSString *)strSearch;
 
 @end

@@ -7,6 +7,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface MSLocationViewController : UIViewController
+@interface MSLocationViewController : MSParentViewController
+
+@property (nonatomic, strong) MSItems *item;
 
 @end

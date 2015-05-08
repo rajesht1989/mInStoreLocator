@@ -1,5 +1,4 @@
 
-#import "UIImage+Color.h"
 
 @implementation UIImage (Color)
 
