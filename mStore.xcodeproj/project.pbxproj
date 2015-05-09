@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9221A81F1AFE8A75002A5D9C /* UINavigationController+MSNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9221A81E1AFE8A75002A5D9C /* UINavigationController+MSNavigationController.m */; };
+		9221A8211AFE9860002A5D9C /* pin1.png in Resources */ = {isa = PBXBuildFile; fileRef = 9221A8201AFE9860002A5D9C /* pin1.png */; };
 		922F29BF1AFBBC830001F580 /* MSCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 922F29BE1AFBBC830001F580 /* MSCollectionViewCell.m */; };
 		922F29C41AFC6DC00001F580 /* gridicon.png in Resources */ = {isa = PBXBuildFile; fileRef = 922F29C01AFC6DC00001F580 /* gridicon.png */; };
 		922F29C51AFC6DC00001F580 /* gridicon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 922F29C11AFC6DC00001F580 /* gridicon@2x.png */; };
@@ -61,6 +63,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9221A81D1AFE8A75002A5D9C /* UINavigationController+MSNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+MSNavigationController.h"; sourceTree = "<group>"; };
+		9221A81E1AFE8A75002A5D9C /* UINavigationController+MSNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+MSNavigationController.m"; sourceTree = "<group>"; };
+		9221A8201AFE9860002A5D9C /* pin1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pin1.png; sourceTree = "<group>"; };
 		922F29BD1AFBBC830001F580 /* MSCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSCollectionViewCell.h; sourceTree = "<group>"; };
 		922F29BE1AFBBC830001F580 /* MSCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSCollectionViewCell.m; sourceTree = "<group>"; };
 		922F29C01AFC6DC00001F580 /* gridicon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gridicon.png; sourceTree = "<group>"; };
@@ -198,6 +203,8 @@
 				9267CF0F1AF8C9A200106310 /* UIImage+Color.m */,
 				9267CF111AF8D1EC00106310 /* MStore.h */,
 				9267CF121AF8D1EC00106310 /* MStore.m */,
+				9221A81D1AFE8A75002A5D9C /* UINavigationController+MSNavigationController.h */,
+				9221A81E1AFE8A75002A5D9C /* UINavigationController+MSNavigationController.m */,
 				9267CEF21AF8886C00106310 /* Main.storyboard */,
 				9267CEF51AF8886C00106310 /* Images.xcassets */,
 				9267CEF71AF8886C00106310 /* LaunchScreen.xib */,
@@ -242,6 +249,7 @@
 				922F29CF1AFCC5D40001F580 /* logout.png */,
 				922F29D01AFCC5D40001F580 /* logout@2x.png */,
 				922F29CB1AFC92780001F580 /* pin.png */,
+				9221A8201AFE9860002A5D9C /* pin1.png */,
 				922F29C01AFC6DC00001F580 /* gridicon.png */,
 				922F29C11AFC6DC00001F580 /* gridicon@2x.png */,
 				922F29C21AFC6DC00001F580 /* List.png */,
@@ -360,6 +368,7 @@
 				9267CF311AFB37F700106310 /* Mobiles.png in Resources */,
 				922F29C41AFC6DC00001F580 /* gridicon.png in Resources */,
 				9267CF2B1AFB37F700106310 /* Cameras.png in Resources */,
+				9221A8211AFE9860002A5D9C /* pin1.png in Resources */,
 				9267CF451AFB6C5300106310 /* MStore.json in Resources */,
 				9267CF551AFB6CFE00106310 /* 5.png in Resources */,
 				922F29D11AFCC5D40001F580 /* logout.png in Resources */,
@@ -378,6 +387,7 @@
 			files = (
 				9267CEEB1AF8886C00106310 /* AppDelegate.m in Sources */,
 				9267CEEE1AF8886C00106310 /* MasterViewController.m in Sources */,
+				9221A81F1AFE8A75002A5D9C /* UINavigationController+MSNavigationController.m in Sources */,
 				9267CF1D1AFA687A00106310 /* MSParentViewController.m in Sources */,
 				9267CF421AFB6B7400106310 /* MSCategory.m in Sources */,
 				9267CF201AFA689E00106310 /* MSParentTableViewController.m in Sources */,

@@ -120,9 +120,10 @@
 
 - (void)locateTapped:(UIButton *)button
 {
+    
     MSLocationViewController *locateController = [MSLocationViewController new];
     [locateController setItem:_category.items[button.tag]];
-    [self.navigationController pushViewController:locateController animated:YES];
+    [self presentViewController:[[UINavigationController alloc] initWithRootViewController:locateController] animated:YES completion:nil];
 }
 
 

@@ -105,6 +105,7 @@
     });
 }
 
+
 - (void)textFieldDidBeginEditing:(UITextField *)textField
 {
     [UIView animateWithDuration:0.3 animations:^{
@@ -128,6 +129,10 @@
     [super didReceiveMemoryWarning];
 }
 
+- (NSUInteger)supportedInterfaceOrientations
+{
+    return UIInterfaceOrientationMaskPortrait | UIInterfaceOrientationMaskPortraitUpsideDown;
+}
 
 
 - (void)cancelTapped:(id)sender
