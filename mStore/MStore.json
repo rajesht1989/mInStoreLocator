@@ -7,61 +7,61 @@
                              "id" : "1",
                              "name" : "Nikon Coolpix L29 16.1MP Digital Camera",
                              "price" : "$ 381",
-                             "location" : "4LC4"
+                             "location" : "1LC4"
                              },
                              {
                              "id" : "2",
                              "name" : "Nikon Coolpix L30 20 MP Digital Camera",
                              "price" : "$ 490",
-                             "location" : "4LC4"
+                             "location" : "2LC4"
                              },
                              {
                              "id" : "3",
                              "name" : "Nikon Coolpix S2800 20.1MP Digital Camera",
                              "price" : "$ 499",
-                             "location" : "4LC4"
+                             "location" : "3LC4"
                              },
                              {
                              "id" : "4",
                              "name" : "Canon IXUS145 16MP Digital Camera",
                              "price" : "$ 53",
-                             "location" : "4LC4"
+                             "location" : "3LC4"
                              },
                              {
                              "id" : "2",
                              "name" : "Nikon Coolpix L30 20 MP Digital Camera",
                              "price" : "$ 490",
-                             "location" : "4LC4"
+                             "location" : "3LC4"
                              },
                              {
                              "id" : "3",
                              "name" : "Nikon Coolpix S2800 20.1MP Digital Camera",
                              "price" : "$ 499",
-                             "location" : "4LC4"
+                             "location" : "3LC4"
                              },
                              {
                              "id" : "4",
                              "name" : "Canon IXUS145 16MP Digital Camera",
                              "price" : "$ 53",
-                             "location" : "4LC4"
+                             "location" : "3LC4"
                              },
                              {
                              "id" : "2",
                              "name" : "Nikon Coolpix L30 20 MP Digital Camera",
                              "price" : "$ 490",
-                             "location" : "4LC4"
+                             "location" : "3LC4"
                              },
                              {
                              "id" : "3",
                              "name" : "Nikon Coolpix S2800 20.1MP Digital Camera",
                              "price" : "$ 499",
-                             "location" : "4LC4"
+                             "location" : "3LC4"
                              },
                              {
                              "id" : "4",
                              "name" : "Canon IXUS145 16MP Digital Camera",
                              "price" : "$ 53",
-                             "location" : "4LC4"
+                             "location" : "3LC4"
                              }
                              ]
                   },
@@ -72,25 +72,25 @@
                              "id" : "5",
                              "name" : "Coghlan's Trekk Iii First Aid Kit",
                              "price" : "$ 16",
-                             "location" : "4LC4"
+                             "location" : "3LC4"
                              },
                              {
                              "id" : "6",
                              "name" : "Clickforsign First Aid Box Sign Glow In The Dark",
                              "price" : "$ 33",
-                             "location" : "4LC4"
+                             "location" : "3LC4"
                              },
                              {
                              "id" : "7",
                              "name" : "Wild Eye First Aid Stainless Steel 207 ml Hip Flask",
                              "price" : "$ 89",
-                             "location" : "4LC4"
+                             "location" : "3LC4"
                              },
                              {
                              "id" : "8",
                              "name" : "SJB Dr.dolly Doll first aid kit",
                              "price" : "$ 8",
-                             "location" : "4LC4"
+                             "location" : "3LC4"
                              }
                              ]
                   },
@@ -101,13 +101,13 @@
                              "id" : "9",
                              "name" : "Snapgalaxy Premium Chocolates Tokri & Diwali Wishes Mug",
                              "price" : "$ 10",
-                             "location" : "4LC4"
+                             "location" : "3LC4"
                              },
                              {
                              "id" : "10",
                              "name" : "Snapgalaxy Fine Chocolate Box & Diwali Wishes Mug",
                              "price" : "$ 30",
-                             "location" : "4LC4"
+                             "location" : "3LC4"
                              }
                              ]
                   },
@@ -117,26 +117,26 @@
                              {
                              "id" : "1",
                              "name" : "Nikon Coolpix L29 16.1MP Digital Camera",
-                             "price" : "$ 3812",
-                             "location" : "4LC4"
+                             "price" : "$ 382",
+                             "location" : "3LC4"
                              },
                              {
                              "id" : "2",
                              "name" : "Nikon Coolpix L30 20 MP Digital Camera",
-                             "price" : "$ 4950",
-                             "location" : "4LC4"
+                             "price" : "$ 490",
+                             "location" : "3LC4"
                              },
                              {
                              "id" : "3",
                              "name" : "Nikon Coolpix S2800 20.1MP Digital Camera",
-                             "price" : "$ 4949",
-                             "location" : "4LC4"
+                             "price" : "$ 449",
+                             "location" : "3LC4"
                              },
                              {
                              "id" : "4",
                              "name" : "Canon IXUS145 16MP Digital Camera",
-                             "price" : "$ 58313",
-                             "location" : "4LC4"
+                             "price" : "$ 513",
+                             "location" : "3LC4"
                              }
                              ]
                   },
@@ -146,26 +146,26 @@
                              {
                              "id" : "1",
                              "name" : "Nikon Coolpix L29 16.1MP Digital Camera",
-                             "price" : "$ 3812",
-                             "location" : "4LC4"
+                             "price" : "$ 312",
+                             "location" : "3LC4"
                              },
                              {
                              "id" : "2",
                              "name" : "Nikon Coolpix L30 20 MP Digital Camera",
-                             "price" : "$ 4950",
-                             "location" : "4LC4"
+                             "price" : "$ 49",
+                             "location" : "3LC4"
                              },
                              {
                              "id" : "3",
                              "name" : "Nikon Coolpix S2800 20.1MP Digital Camera",
-                             "price" : "$ 4949",
-                             "location" : "4LC4"
+                             "price" : "$ 95",
+                             "location" : "3LC4"
                              },
                              {
                              "id" : "4",
                              "name" : "Canon IXUS145 16MP Digital Camera",
-                             "price" : "$ 58313",
-                             "location" : "4LC4"
+                             "price" : "$ 58",
+                             "location" : "3LC4"
                              }
                              ]
                   },
@@ -175,26 +175,26 @@
                              {
                              "id" : "1",
                              "name" : "Nikon Coolpix L29 16.1MP Digital Camera",
-                             "price" : "$ 3812",
-                             "location" : "4LC4"
+                             "price" : "$ 13",
+                             "location" : "3LC4"
                              },
                              {
                              "id" : "2",
                              "name" : "Nikon Coolpix L30 20 MP Digital Camera",
-                             "price" : "$ 4950",
-                             "location" : "4LC4"
+                             "price" : "$ 54",
+                             "location" : "3LC4"
                              },
                              {
                              "id" : "3",
                              "name" : "Nikon Coolpix S2800 20.1MP Digital Camera",
-                             "price" : "$ 4949",
-                             "location" : "4LC4"
+                             "price" : "$ 45",
+                             "location" : "3LC4"
                              },
                              {
                              "id" : "4",
                              "name" : "Canon IXUS145 16MP Digital Camera",
-                             "price" : "$ 58313",
-                             "location" : "4LC4"
+                             "price" : "$ 13",
+                             "location" : "3LC4"
                              }
                              ]
                   },
@@ -204,26 +204,26 @@
                              {
                              "id" : "1",
                              "name" : "Nikon Coolpix L29 16.1MP Digital Camera",
-                             "price" : "$ 3812",
-                             "location" : "4LC4"
+                             "price" : "$ 32",
+                             "location" : "3LC4"
                              },
                              {
                              "id" : "2",
                              "name" : "Nikon Coolpix L30 20 MP Digital Camera",
-                             "price" : "$ 4950",
-                             "location" : "4LC4"
+                             "price" : "$ 40",
+                             "location" : "3LC4"
                              },
                              {
                              "id" : "3",
                              "name" : "Nikon Coolpix S2800 20.1MP Digital Camera",
-                             "price" : "$ 4949",
-                             "location" : "4LC4"
+                             "price" : "$ 49",
+                             "location" : "3LC4"
                              },
                              {
                              "id" : "4",
                              "name" : "Canon IXUS145 16MP Digital Camera",
-                             "price" : "$ 58313",
-                             "location" : "4LC4"
+                             "price" : "$ 513",
+                             "location" : "3LC4"
                              }
                              ]
                   },
@@ -233,26 +233,26 @@
                              {
                              "id" : "1",
                              "name" : "Nikon Coolpix L29 16.1MP Digital Camera",
-                             "price" : "$ 3812",
-                             "location" : "4LC4"
+                             "price" : "$ 12",
+                             "location" : "3LC4"
                              },
                              {
                              "id" : "2",
                              "name" : "Nikon Coolpix L30 20 MP Digital Camera",
-                             "price" : "$ 4950",
-                             "location" : "4LC4"
+                             "price" : "$ 50",
+                             "location" : "3LC4"
                              },
                              {
                              "id" : "3",
                              "name" : "Nikon Coolpix S2800 20.1MP Digital Camera",
-                             "price" : "$ 4949",
-                             "location" : "4LC4"
+                             "price" : "$ 49",
+                             "location" : "3LC4"
                              },
                              {
                              "id" : "4",
                              "name" : "Canon IXUS145 16MP Digital Camera",
-                             "price" : "$ 58313",
-                             "location" : "4LC4"
+                             "price" : "$ 313",
+                             "location" : "3LC4"
                              }
                              ]
                   }

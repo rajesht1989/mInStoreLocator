@@ -14,6 +14,21 @@
     return img;
 }
 
+- (UIImage *)changImageColor:(UIColor *)color
+{
+        CGRect rect = CGRectMake(0, 0, self.size.width, self.size.height);
+        UIGraphicsBeginImageContext(rect.size);
+        CGContextRef context = UIGraphicsGetCurrentContext();
+        CGContextClipToMask(context, rect, self.CGImage);
+        CGContextSetFillColorWithColor(context, [color CGColor]);
+        CGContextFillRect(context, rect);
+        UIImage *img = UIGraphicsGetImageFromCurrentImageContext();
+        UIGraphicsEndImageContext();
+        
+        return [UIImage imageWithCGImage:img.CGImage
+                                   scale:1.0 orientation: UIImageOrientationDownMirrored];
+}
+
 @end
 
 

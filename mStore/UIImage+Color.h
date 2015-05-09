@@ -11,6 +11,7 @@ blue:((float)(rgbValue & 0xFF))/255.0 alpha:1.0]
 @interface UIImage (Color)
 
 + (UIImage *)imageWithColor:(UIColor *)color;
+- (UIImage *)changImageColor:(UIColor *)color;
 
 @end
 

@@ -19,9 +19,17 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    [self setTitle:@"Location"];
+    [self setTitle:@"Location - Floor"];
     UIImageView *imageView = [[UIImageView alloc] initWithFrame:self.view.bounds];
-    [imageView setImage:[UIImage imageWithColor:[UIColor whiteColor]]];
+    [imageView setAutoresizingMask:UIViewAutoresizingFlexibleHeight|UIViewAutoresizingFlexibleWidth];
+    NSString *strFloor;
+    if (_item.location.length)
+    {
+        strFloor = [_item.location substringWithRange:NSMakeRange(0, 1)];
+    }
+    [self setTitle:[NSString stringWithFormat:@"Location - Floor %@",strFloor]];
+
+    [imageView setImage:[UIImage imageNamed:[NSString stringWithFormat:@"Floor%@",strFloor]]];
     [self.view addSubview:imageView];
     
     imageViewPin = [[UIImageView alloc] initWithFrame:CGRectMake(50, 50, 50, 40)];

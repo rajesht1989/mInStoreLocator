@@ -17,6 +17,9 @@
 		922F29CE1AFCC4790001F580 /* login.png in Resources */ = {isa = PBXBuildFile; fileRef = 922F29CD1AFCC4790001F580 /* login.png */; };
 		922F29D11AFCC5D40001F580 /* logout.png in Resources */ = {isa = PBXBuildFile; fileRef = 922F29CF1AFCC5D40001F580 /* logout.png */; };
 		922F29D21AFCC5D40001F580 /* logout@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 922F29D01AFCC5D40001F580 /* logout@2x.png */; };
+		922F29D41AFD202F0001F580 /* Floor1.png in Resources */ = {isa = PBXBuildFile; fileRef = 922F29D31AFD202F0001F580 /* Floor1.png */; };
+		922F29D81AFD20730001F580 /* Floor3.png in Resources */ = {isa = PBXBuildFile; fileRef = 922F29D71AFD20730001F580 /* Floor3.png */; };
+		922F29DA1AFD22A40001F580 /* Floor2.png in Resources */ = {isa = PBXBuildFile; fileRef = 922F29D91AFD22A40001F580 /* Floor2.png */; };
 		9267CEE81AF8886C00106310 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9267CEE71AF8886C00106310 /* main.m */; };
 		9267CEEB1AF8886C00106310 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9267CEEA1AF8886C00106310 /* AppDelegate.m */; };
 		9267CEEE1AF8886C00106310 /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9267CEED1AF8886C00106310 /* MasterViewController.m */; };
@@ -70,6 +73,9 @@
 		922F29CD1AFCC4790001F580 /* login.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = login.png; sourceTree = "<group>"; };
 		922F29CF1AFCC5D40001F580 /* logout.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logout.png; sourceTree = "<group>"; };
 		922F29D01AFCC5D40001F580 /* logout@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "logout@2x.png"; sourceTree = "<group>"; };
+		922F29D31AFD202F0001F580 /* Floor1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Floor1.png; sourceTree = "<group>"; };
+		922F29D71AFD20730001F580 /* Floor3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Floor3.png; sourceTree = "<group>"; };
+		922F29D91AFD22A40001F580 /* Floor2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Floor2.png; sourceTree = "<group>"; };
 		9267CEE21AF8886C00106310 /* mStore.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = mStore.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9267CEE61AF8886C00106310 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9267CEE71AF8886C00106310 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -229,6 +235,9 @@
 		9267CF461AFB6C8C00106310 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				922F29D31AFD202F0001F580 /* Floor1.png */,
+				922F29D91AFD22A40001F580 /* Floor2.png */,
+				922F29D71AFD20730001F580 /* Floor3.png */,
 				922F29CD1AFCC4790001F580 /* login.png */,
 				922F29CF1AFCC5D40001F580 /* logout.png */,
 				922F29D01AFCC5D40001F580 /* logout@2x.png */,
@@ -321,14 +330,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				922F29CC1AFC92780001F580 /* pin.png in Resources */,
+				922F29D41AFD202F0001F580 /* Floor1.png in Resources */,
 				9267CF5A1AFB6CFE00106310 /* 10.png in Resources */,
 				9267CF581AFB6CFE00106310 /* 8.png in Resources */,
 				9267CF561AFB6CFE00106310 /* 6.png in Resources */,
 				922F29C51AFC6DC00001F580 /* gridicon@2x.png in Resources */,
 				9267CF301AFB37F700106310 /* Life style.png in Resources */,
+				922F29D81AFD20730001F580 /* Floor3.png in Resources */,
 				9267CF511AFB6CFE00106310 /* 1.png in Resources */,
 				922F29C71AFC6DC00001F580 /* List@2x.png in Resources */,
 				922F29D21AFCC5D40001F580 /* logout@2x.png in Resources */,
+				922F29DA1AFD22A40001F580 /* Floor2.png in Resources */,
 				9267CEF41AF8886C00106310 /* Main.storyboard in Resources */,
 				9267CF381AFB5DB600106310 /* back@2x.png in Resources */,
 				9267CF341AFB37F700106310 /* Toys.png in Resources */,

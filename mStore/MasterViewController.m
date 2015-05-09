@@ -176,6 +176,7 @@
     
     NSDate *object = self.objects[indexPath.row];
     cell.textLabel.text = [object description];
+    [cell.textLabel setFont:[UIFont systemFontOfSize:15 weight:.4]];
     [cell.imageView setImage:[UIImage imageNamed:[object description]]];
     return cell;
 }

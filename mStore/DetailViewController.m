@@ -30,16 +30,30 @@
     [[self.navigationController navigationBar] setBackgroundImage:NAVIGATION_BAR_IMAGE forBarMetrics:UIBarMetricsDefault];
     self.navigationController.navigationBar.titleTextAttributes = [NSDictionary dictionaryWithObject:[UIColor whiteColor] forKey:NSForegroundColorAttributeName];
     [self setTitle:[self.category name]];
-   
-    collectionView =[[UICollectionView alloc] initWithFrame:self.view.bounds collectionViewLayout:[UICollectionViewFlowLayout new]];
-    [collectionView setAutoresizingMask:UIViewAutoresizingFlexibleWidth|UIViewAutoresizingFlexibleHeight];
-    collectionView.delegate=self;
-    collectionView.dataSource=self;
-    collectionView.backgroundColor=[UIColor clearColor];
-    [collectionView registerClass:[MSCollectionViewCell class] forCellWithReuseIdentifier:@"collectionViewCell"];
-    [self.view addSubview:collectionView];
-    
-    [self.navigationItem setRightBarButtonItem:[[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"List"] style:UIBarButtonItemStylePlain target:self action:@selector(layoutBarButtonTapped:)]];
+   if(self.category.items.count)
+   {
+       collectionView =[[UICollectionView alloc] initWithFrame:self.view.bounds collectionViewLayout:[UICollectionViewFlowLayout new]];
+       [collectionView setAutoresizingMask:UIViewAutoresizingFlexibleWidth|UIViewAutoresizingFlexibleHeight];
+       collectionView.delegate=self;
+       collectionView.dataSource=self;
+       collectionView.backgroundColor=[UIColor clearColor];
+       [collectionView registerClass:[MSCollectionViewCell class] forCellWithReuseIdentifier:@"collectionViewCell"];
+       [self.view addSubview:collectionView];
+       
+       [self.navigationItem setRightBarButtonItem:[[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"List"] style:UIBarButtonItemStylePlain target:self action:@selector(layoutBarButtonTapped:)]];
+   }
+   else
+   {
+       UILabel *lblNoItems = [[UILabel alloc] initWithFrame:self.view.bounds];
+       [self.view addSubview:lblNoItems];
+       [lblNoItems setAutoresizingMask:UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight];
+       [lblNoItems setFont:[UIFont systemFontOfSize:17 weight:.4]];
+       [lblNoItems setNumberOfLines:0];
+       [lblNoItems setTextAlignment:NSTextAlignmentCenter];
+       [lblNoItems setTextColor:[UIColor darkGrayColor]];
+       [lblNoItems setText:@"No items available for your search."];
+   }
+
 }
 
 - (void)backPressed:(UIButton *)btnBack
@@ -107,6 +121,7 @@
 - (void)locateTapped:(UIButton *)button
 {
     MSLocationViewController *locateController = [MSLocationViewController new];
+    [locateController setItem:_category.items[button.tag]];
     [self.navigationController pushViewController:locateController animated:YES];
 }
 

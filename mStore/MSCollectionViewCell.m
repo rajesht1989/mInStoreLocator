@@ -32,7 +32,7 @@
         [_lblPrice setTextColor:[UIColor darkGrayColor]];
         [self addSubview:_lblPrice];
         
-        _btnLocate = [[UIButton alloc] initWithFrame:CGRectMake(self.frame.size.width - 80 - 10, 85 + 50, 70, 24)];
+        _btnLocate = [[UIButton alloc] initWithFrame:CGRectMake(self.frame.size.width - 80 - 5, 85 + 50, 70, 24)];
         [_btnLocate setAutoresizingMask:UIViewAutoresizingFlexibleLeftMargin];
         [_btnLocate setTitle:@"Locate" forState:UIControlStateNormal];
         [_btnLocate.titleLabel setFont:[UIFont systemFontOfSize:13 weight:.4]];
