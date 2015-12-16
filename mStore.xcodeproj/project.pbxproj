@@ -306,7 +306,7 @@
 		9267CEDA1AF8886C00106310 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0630;
+				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = ZOHO;
 				TargetAttributes = {
 					9267CEE11AF8886C00106310 = {
@@ -446,6 +446,7 @@
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -515,6 +516,7 @@
 				GCC_PREFIX_HEADER = "$(SRCROOT)/mStore/mStore.pch";
 				INFOPLIST_FILE = mStore/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.myorg.mstore.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "56ece7d4-7057-49e2-a34b-901ae869c7d6";
 				TARGETED_DEVICE_FAMILY = 1;
@@ -529,6 +531,7 @@
 				GCC_PREFIX_HEADER = "$(SRCROOT)/mStore/mStore.pch";
 				INFOPLIST_FILE = mStore/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.myorg.mstore.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "56ece7d4-7057-49e2-a34b-901ae869c7d6";
 				TARGETED_DEVICE_FAMILY = 1;
